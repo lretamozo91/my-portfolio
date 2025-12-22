@@ -1,0 +1,24 @@
+.servicios {
+  background-color: var(--gris-claro);
+}
+.servicios .card {
+  background-color: var(--gris-sec);
+  border: 2px solid var(--bordo);
+  border-radius: 2rem;
+  box-shadow: rgba(122, 0, 31, 0.4) 0px 0px 15px;
+  height: -webkit-fill-available;
+}
+
+.servicios .card:hover {
+  background-color: var(--gris);
+  border-width: 1px;
+}
+
+.servicios .card .card-title {
+  color: var(--texto-2);
+}
+
+.servicios .card .card-icon svg {
+  width: 50px;
+  height: auto;
+}

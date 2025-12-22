@@ -1,0 +1,23 @@
+
+.footer {
+  background-color: var(--gris-sec);
+}
+
+.footer h3 a {
+  color: var(--texto-1);
+  text-decoration: none;
+}
+
+.footer a.icon-contact {
+  border: 1px solid var(--rojo);
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.footer a.icon-contact:hover {
+  background-color: var(--gris);
+}

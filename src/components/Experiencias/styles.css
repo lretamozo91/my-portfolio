@@ -1,0 +1,46 @@
+
+.experiencias .content-exp {
+  padding: 20px 28px;
+  border-radius: 48px;
+  background-color: var(--gris-claro);
+  box-shadow: 0 0 0 6px var(--light-outline), 0 0 0 10px var(--dark-outline);
+  width: 95%;
+}
+
+@media (min-width: 768px) {
+  .experiencias .content-exp {
+      width: 100%;
+  }
+  .experiencias .timeline-exp {
+    border-right: 2px solid var(--rojo-claro);
+  }
+  .experiencias .company-name {
+    position: relative;
+  }
+
+  .experiencias .company-name::before {
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background-color: var(--texto-1);
+    border-radius: 50%;
+    right: -53px;
+    top: -2px;
+    z-index: 2;
+  }
+
+  .experiencias .company-name::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: var(--bordo);
+    border-radius: 50%;
+    right: -61px;
+    top: -10px;
+    z-index: 1;
+    border: 1px solid var(--rojo-claro);
+    box-shadow: rgba(122, 0, 31, 0.4) 0px 0px 15px;
+  }
+}

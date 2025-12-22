@@ -1,0 +1,18 @@
+.btn {
+  display: inline-flex;
+  height: 2.5rem;
+  align-items: center;
+  border-width: 1px;
+  font-weight: 500;
+  padding: 0 1.5rem;
+}
+
+.btn-primary {
+  border-color: var(--bordo-oscuro);
+  background-color: var(--bordo);
+}
+
+.btn-primary:hover {
+  border-color: var(--bordo-oscuro);
+  background-color: var(--bordo-luminoso);
+}

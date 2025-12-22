@@ -1,0 +1,48 @@
+.hero {
+  max-height: 100vh;
+  height: 100%;
+  position: relative;
+}
+
+/* 7A001F 8C001F 5A0018 */
+.hero::before {
+    content: '';
+    position: absolute;
+    bottom: 10rem;
+    inset-inline-start: -60rem;
+    transform: rotate(65deg);
+    height: 35rem;
+    width: 90rem;
+    background-color: var(--bordo-oscuro);
+    z-index: -1;
+}
+
+/* C73232 D64545 B52B2B */
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: 10rem;
+    inset-inline-start: -57rem;
+    transform: rotate(65deg);
+    height: 35rem;
+    width: 90rem;
+    background-color: var(--bordo-luminoso);
+    z-index: -2;
+}
+
+@media (min-width: 768px) {
+  .hero::before {
+    inset-inline-start: -40rem;
+    height: 35rem;
+    width: 90rem;
+  }
+  .hero::after {
+    inset-inline-start: -33rem;
+    height: 35rem;
+    width: 90rem;
+  }
+}
+
+.perfil-img {
+  width: 100%;
+}

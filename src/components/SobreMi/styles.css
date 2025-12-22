@@ -1,0 +1,104 @@
+.sobre-mi {
+  background-color: var(--gris-claro);
+}
+
+@media (min-width: 768px) {
+  .sobre-mi {
+    max-height: 100vh;
+  }
+}
+
+.oval {
+  width: 300px; /* Ancho diferente al alto */
+  height: 500px; /* Alto diferente al ancho */
+  border-radius: 50%; /* Redondea las esquinas para formar el óvalo */
+  box-shadow: rgba(90, 0, 24, 0.25) 0px 10px 52px -20px, rgba(0, 0, 0, 0.3) 0px 36px 63px -30px, rgba(229, 229, 229, 0.35) 0px -10px 10px 0px inset;
+  position: relative;
+}
+
+.sobre-mi-img {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-radius: 50%;
+}
+
+.bubble{
+  position: relative;
+  z-index: 3;
+  display: inline-block;
+  padding: 20px 28px;
+  border-radius: 48px;               /* redondeo del bubble */
+  background: var(--fondo-bubble);
+  color: #0a0a0a;
+  font-size: 16px;
+  line-height: 1.3;
+  /* doble contorno: primero blanco (más cercano), luego negro (exterior) */
+  box-shadow:
+    0 0 0 6px var(--light-outline),
+    0 0 0 10px var(--dark-outline);
+}
+
+/* pseudo para la "cola" grande (contorno negro) */
+.bubble::before{
+  content: "";
+  position: absolute;
+  bottom: -41px;
+  left: 30%;
+  width: 44px;
+  height: 44px;
+  transform: rotate(23deg); /* ángulo de la cola */
+  border-radius: 6px;
+  background: var(--dark-outline);
+  z-index: 1;
+}
+
+/* pseudo para la "cola" intermedia (contorno blanco) */
+.bubble::after{
+  content: "";
+  position: absolute;
+  /* right: -37px;
+  top: 5px; */
+  bottom: -38px;
+  left: calc(30% + 4px);
+  width: 36px;
+  height: 36px;
+  transform: rotate(21deg);
+  border-radius: 5px;
+  background: var(--light-outline);
+  z-index: 2;
+}
+
+/* una pequeña capa extra para la parte verde de la cola (encima del blanco) */
+.bubble .tail{
+  position:absolute;
+  bottom: -35px;
+  left: calc(30% + 8px);
+  width: 28px;
+  height: 28px;
+  transform: rotate(20deg);
+  border-radius: 4px;
+  background: var(--fondo-bubble);
+  z-index: 3;
+}
+
+@media (min-width: 768px) {
+  .bubble::before{
+    right: -42px;
+    top: 125px;
+    bottom: unset;
+    left: unset;
+  }
+  .bubble::after{
+    right: -37px;
+    top: 130px;
+    bottom: unset;
+    left: unset;
+  }
+  .bubble .tail{
+    right: -31px;
+    top: 133px;
+    bottom: unset;
+    left: unset;
+  }
+}

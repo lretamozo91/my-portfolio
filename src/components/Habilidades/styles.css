@@ -1,0 +1,83 @@
+.habilidades{
+  position: relative;
+}
+
+/* .habilidades::before {
+  inset-inline-end: -60rem;
+  height: 35rem;
+  width: 90rem;
+  content: '';
+  position: absolute;
+  top: 10rem;
+  transform: rotate(65deg);
+  background-color: var(--bordo-oscuro);
+  z-index: -1;
+}
+
+.habilidades::after {
+  inset-inline-end: -57rem;
+  height: 35rem;
+  width: 90rem;
+  content: '';
+  position: absolute;
+  top: 10rem;
+  transform: rotate(65deg);
+  background-color: var(--bordo-luminoso);
+  z-index: -2;
+} */
+
+@media (min-width: 768px) {
+  .habilidades::before {
+    inset-inline-end: -12rem;
+    height: 35rem;
+    width: 120rem;
+    content: '';
+    position: absolute;
+    top: 20rem;
+    transform: rotate(65deg);
+    background-color: var(--bordo-oscuro);
+    z-index: -1;
+  }
+  .habilidades::after {
+    inset-inline-end: -18rem;
+    height: 35rem;
+    width: 120rem;
+    content: '';
+    position: absolute;
+    top: 20rem;
+    transform: rotate(65deg);
+    background-color: var(--bordo-luminoso);
+    z-index: -2;
+  }
+}
+
+.habilidades span {
+  color: var(--texto-1);
+  font-weight: 500;
+}
+
+.span-content {
+  padding: 1rem;
+  margin: 0.25rem;
+  border: 1px solid var(--texto-1);
+  border-radius: 50rem;
+}
+
+span img,
+span svg {
+  width: 30px;
+  height: 30px;
+}
+
+.habilidades .img-habilidades {
+  box-shadow: rgba(255, 240, 240, 0.35) 0px 5px 15px;
+  background-image: url('../../assets/habilidades-h.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.habilidades .content-hab {
+  background-color: var(--gris-claro);
+  height: -webkit-fill-available;
+}

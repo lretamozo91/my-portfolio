@@ -1,0 +1,44 @@
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar-fixed.navbar-bg  {
+  background-color: rgba(14, 14, 16, 0.7);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+  padding: 1rem 0;
+}
+
+.navbar-dark .navbar-toggler {
+  background-color: rgba(14, 14, 16, 0.5);
+}
+
+/* UL ocupa todo el ancho disponible del nav */
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar ul li.active a {
+  font-weight: 700;
+  color: var(--rojo-claro);
+}
+
+.navbar ul li a {
+  color: var(--texto-1);
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: var(--rojo-claro);
+}

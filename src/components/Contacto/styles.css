@@ -1,0 +1,21 @@
+.contacto {
+  background-color: var(--gris-claro);
+}
+
+.content-contact {
+  background-color: var(--gris);
+}
+
+.content-contact .form-control {
+  background-color: var(--gris);
+  border: 1px solid var(--bordo);
+  color: var(--texto-2);
+}
+
+.content-contact .form-control:focus {
+  box-shadow: 0 0 0 .25rem rgba(122, 0, 31, .25);
+}
+
+.content-contact-2 {
+  background-color: var(--gris-sec);
+}

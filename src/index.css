@@ -1,0 +1,63 @@
+body {
+  background-color: unset;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  /* margin-bottom: 3rem; */
+  background-color: #0E0E10;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --bordo: #7A001F;
+  --bordo-luminoso: #8C001F;
+  --bordo-oscuro: #5A0018;
+  
+  --rojo: #C73232;
+  --rojo-claro: #D64545;
+  --rojo-intenso: #B52B2B;
+  
+  --gris: #0E0E10;
+  --gris-claro: #1A1A1D;
+  --gris-sec: #121215;
+  
+  --texto-1: #E5E5E5;
+  --texto-2: #F7F7F7;
+  
+  --fondo-bubble: var(--texto-1);   /* color del globo */
+  --light-outline: var(--rojo-claro); /* contorno interno */
+  --dark-outline: #000000;  /* contorno externo */
+}
+
+h1, h2, h3, h5 {
+  color: #F7F7F7;
+}
+
+p, li {
+  color: #E5E5E5;
+}
+
+.text-red-color {
+  color: var(--rojo);
+}
+
+.text-bordo-color {
+  color: var(--bordo);
+}
+
+li {
+  color: #c7c7c7;
+}
+
+.transition {
+  transition: transform 0.2s ease-in-out;
+}
+
+.transition:hover {
+  transform: scale(1.03)
+}
