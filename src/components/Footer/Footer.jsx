@@ -8,7 +8,7 @@ export const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-4 pb-4 pb-lg-0">
-            <h3 className="text-center text-lg-start m-0"><a href="#hero">Luis Retamozo</a></h3>
+            <h3 className="text-center text-lg-start m-0 transition"><a href="#hero">Luis Retamozo</a></h3>
           </div>
           <div className="col-lg-4 pb-4 pb-lg-0">
             <p className='m-0 text-center'>&copy; 2025 Luis Retamozo. Todos los derechos reservados.</p>

@@ -12,7 +12,8 @@
   background-color: var(--bordo);
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn.btn-primary:active {
   border-color: var(--bordo-oscuro);
   background-color: var(--bordo-luminoso);
 }
