@@ -2,12 +2,6 @@
   background-color: var(--gris-claro);
 }
 
-@media (min-width: 768px) {
-  .sobre-mi {
-    max-height: 100vh;
-  }
-}
-
 .oval {
   width: 300px; /* Ancho diferente al alto */
   height: 500px; /* Alto diferente al ancho */

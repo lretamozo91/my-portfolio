@@ -4,7 +4,7 @@ import './styles.css'
 
 export const Hero = () => {
   return (
-    <section className="hero pt-5" id='hero'>
+    <section className="hero" id='hero'>
       <div className="container">
         <div className="row">
           <div className="col-md-6 ">
